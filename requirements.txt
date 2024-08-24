@@ -1,2 +1,17 @@
-streamlit
-openai
+langchain==0.0.312
+PyPDF2==3.0.1
+python-dotenv==1.0.0
+streamlit==1.27.2
+openai==0.27.6
+altair==4
+duckduckgo-search==6.1.7
+pypdf==3.16.4
+chromadb
+# Core Dependencies
+tiktoken
+faiss-cpu
+Pillow
+ 
+# Additional Dependencies
+setuptools>=42
+wheel>=0.36.2
