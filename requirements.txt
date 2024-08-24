@@ -7,6 +7,9 @@ altair==4
 duckduckgo-search==6.1.7
 pypdf==3.16.4
 chromadb
+wikipedia
+arxiv
+
 # Core Dependencies
 tiktoken
 faiss-cpu
