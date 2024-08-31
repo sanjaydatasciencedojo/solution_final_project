@@ -5,11 +5,11 @@ from langchain.chat_models import ChatOpenAI
 from langchain.tools import DuckDuckGoSearchRun
 from langchain.agents import initialize_agent, Tool
 from langchain.callbacks import StreamlitCallbackHandler
-from langchain.tools import WikipediaQueryRun
+from langchain_community.tools import WikipediaQueryRun
 
 from langchain.utilities import WikipediaAPIWrapper
-from langchain.tools import PythonREPLTool
-from langchain.utilities import ArxivAPIWrapper
+from langchain_experimental.tools.python.tool import PythonREPLTool
+from langchain_community.utilities import ArxivAPIWrapper
 
 
 
