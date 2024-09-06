@@ -6,8 +6,7 @@ from langchain_community.tools import DuckDuckGoSearchRun
 from langchain.agents import Tool, initialize_agent
 from langchain_community.callbacks.streamlit import StreamlitCallbackHandler
 from langchain_community.tools import WikipediaQueryRun
-
-from langchain.utilities import WikipediaAPIWrapper
+from langchain_community.utilities import WikipediaAPIWrapper
 from langchain_experimental.tools.python.tool import PythonREPLTool
 from langchain_community.utilities import ArxivAPIWrapper
 
