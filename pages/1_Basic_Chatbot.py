@@ -2,7 +2,7 @@ import utils
 import streamlit as st
 from streaming import StreamHandler
 
-from langchain.llms import OpenAI
+from langchain_openai import ChatOpenAI
 from langchain.chains import ConversationChain
 from langchain.memory import ConversationBufferMemory
 
@@ -17,11 +17,11 @@ class Basic:
 
     def __init__(self):
         utils.configure_openai_api_key()
-        self.openai_model = "gpt-3.5-turbo"
+        self.openai_model = "gpt-4o-mini"
 
     def setup_chain(self):
         # Setup memory for contextual conversation 
-        llm = OpenAI(model_name=self.openai_model,
+        llm =ChatOpenAI(model_name=self.openai_model,
                 temperature=0, streaming=True) 
         memory = ConversationBufferMemory()
         user = utils.join_messages(st.session_state.messages,'user')

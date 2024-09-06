@@ -1,10 +1,10 @@
 import utils
 import streamlit as st
 from langchain.agents import AgentType
-from langchain.chat_models import ChatOpenAI
-from langchain.tools import DuckDuckGoSearchRun
-from langchain.agents import initialize_agent, Tool
-from langchain.callbacks import StreamlitCallbackHandler
+from langchain_openai import ChatOpenAI
+from langchain_community.tools import DuckDuckGoSearchRun
+from langchain.agents import Tool, initialize_agent
+from langchain_community.callbacks.streamlit import StreamlitCallbackHandler
 from langchain_community.tools import WikipediaQueryRun
 
 from langchain.utilities import WikipediaAPIWrapper
@@ -23,7 +23,7 @@ class ChatbotTools:
 
     def __init__(self):
         utils.configure_openai_api_key()
-        self.openai_model = "gpt-3.5-turbo"
+        self.openai_model = "gpt-4o-mini"
 
     def setup_agent(self):
         # Define tool
