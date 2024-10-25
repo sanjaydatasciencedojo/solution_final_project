@@ -8,7 +8,7 @@ python-dotenv==1.0.0
 streamlit==1.27.2
 openai==1.43.1
 altair==4
-duckduckgo-search==6.1.7
+duckduckgo-search==6.3.2
 pypdf==3.16.4
 chromadb==0.5.5
 wikipedia>=1.4.0
